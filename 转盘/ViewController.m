@@ -7,15 +7,21 @@
 //
 
 #import "ViewController.h"
-
+#import "Circle.h"
 @interface ViewController ()
-
+@property (nonatomic,weak)Circle *circle;
 @end
 
 @implementation ViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    Circle *circle = [Circle circle];
+    CGSize screenSize = [UIScreen mainScreen].bounds.size;
+    circle.center = CGPointMake(screenSize.width * 0.5, screenSize.height * 0.5);
+    [self.view addSubview:circle];
+    self.circle = circle;
     // Do any additional setup after loading the view, typically from a nib.
 }
 

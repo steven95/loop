@@ -15,6 +15,9 @@
 		9EA7930A1C0AD813005D85A8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9EA793081C0AD813005D85A8 /* LaunchScreen.storyboard */; };
 		9EA793151C0AD813005D85A8 /* __Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA793141C0AD813005D85A8 /* __Tests.m */; };
 		9EA793201C0AD813005D85A8 /* __UITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA7931F1C0AD813005D85A8 /* __UITests.m */; };
+		9EA793321C0AD8AE005D85A8 /* Circle.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA793301C0AD8AE005D85A8 /* Circle.m */; };
+		9EA793331C0AD8AE005D85A8 /* Circlexib.xib in Resources */ = {isa = PBXBuildFile; fileRef = 9EA793311C0AD8AE005D85A8 /* Circlexib.xib */; };
+		9EA793361C0ADB21005D85A8 /* Button.m in Sources */ = {isa = PBXBuildFile; fileRef = 9EA793351C0ADB21005D85A8 /* Button.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +54,11 @@
 		9EA7931B1C0AD813005D85A8 /* 转盘UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "转盘UITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9EA7931F1C0AD813005D85A8 /* __UITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = __UITests.m; sourceTree = "<group>"; };
 		9EA793211C0AD813005D85A8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9EA7932F1C0AD8AE005D85A8 /* Circle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Circle.h; sourceTree = "<group>"; };
+		9EA793301C0AD8AE005D85A8 /* Circle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Circle.m; sourceTree = "<group>"; };
+		9EA793311C0AD8AE005D85A8 /* Circlexib.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Circlexib.xib; sourceTree = "<group>"; };
+		9EA793341C0ADB21005D85A8 /* Button.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Button.h; sourceTree = "<group>"; };
+		9EA793351C0ADB21005D85A8 /* Button.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Button.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +114,11 @@
 				9EA793001C0AD813005D85A8 /* ViewController.h */,
 				9EA793011C0AD813005D85A8 /* ViewController.m */,
 				9EA793031C0AD813005D85A8 /* Main.storyboard */,
+				9EA7932F1C0AD8AE005D85A8 /* Circle.h */,
+				9EA793301C0AD8AE005D85A8 /* Circle.m */,
+				9EA793341C0ADB21005D85A8 /* Button.h */,
+				9EA793351C0ADB21005D85A8 /* Button.m */,
+				9EA793311C0AD8AE005D85A8 /* Circlexib.xib */,
 				9EA793061C0AD813005D85A8 /* Assets.xcassets */,
 				9EA793081C0AD813005D85A8 /* LaunchScreen.storyboard */,
 				9EA7930B1C0AD813005D85A8 /* Info.plist */,
@@ -247,6 +260,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA7930A1C0AD813005D85A8 /* LaunchScreen.storyboard in Resources */,
+				9EA793331C0AD8AE005D85A8 /* Circlexib.xib in Resources */,
 				9EA793071C0AD813005D85A8 /* Assets.xcassets in Resources */,
 				9EA793051C0AD813005D85A8 /* Main.storyboard in Resources */,
 			);
@@ -274,6 +288,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				9EA793021C0AD813005D85A8 /* ViewController.m in Sources */,
+				9EA793361C0ADB21005D85A8 /* Button.m in Sources */,
+				9EA793321C0AD8AE005D85A8 /* Circle.m in Sources */,
 				9EA792FF1C0AD813005D85A8 /* AppDelegate.m in Sources */,
 				9EA792FC1C0AD813005D85A8 /* main.m in Sources */,
 			);
@@ -501,6 +517,7 @@
 				9EA793261C0AD813005D85A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EA793271C0AD813005D85A8 /* Build configuration list for PBXNativeTarget "转盘Tests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +526,7 @@
 				9EA793291C0AD813005D85A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9EA7932A1C0AD813005D85A8 /* Build configuration list for PBXNativeTarget "转盘UITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +535,7 @@
 				9EA7932C1C0AD813005D85A8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="Circle"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT" customClass="Circle">
+            <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LuckyBaseBackground" translatesAutoresizingMaskIntoConstraints="NO" id="nqF-TC-DMd">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="286" id="FQd-Z5-hfk"/>
+                        <constraint firstAttribute="height" constant="286" id="tjP-7E-SC8"/>
+                    </constraints>
+                </imageView>
+                <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LuckyRotateWheel" translatesAutoresizingMaskIntoConstraints="NO" id="Rja-uy-YLH">
+                    <rect key="frame" x="0.0" y="0.0" width="286" height="286"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="286" id="6Qc-vL-IZA"/>
+                        <constraint firstAttribute="height" constant="286" id="Atf-hw-7p7"/>
+                    </constraints>
+                </imageView>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tbD-lp-rDs">
+                    <rect key="frame" x="103" y="103" width="81" height="81"/>
+                    <state key="normal" image="LuckyCenterButton"/>
+                    <connections>
+                        <action selector="staChoose" destination="-1" eventType="touchUpInside" id="CH8-q5-yJI"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="nqF-TC-DMd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="56p-Vv-yiX"/>
+                <constraint firstAttribute="bottom" secondItem="nqF-TC-DMd" secondAttribute="bottom" id="MCY-Az-hFi"/>
+                <constraint firstAttribute="trailing" secondItem="Rja-uy-YLH" secondAttribute="trailing" id="SA1-Z7-RUH"/>
+                <constraint firstAttribute="bottom" secondItem="Rja-uy-YLH" secondAttribute="bottom" id="h0s-Rp-avL"/>
+                <constraint firstItem="nqF-TC-DMd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="jE9-az-Q8x"/>
+                <constraint firstItem="Rja-uy-YLH" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="udY-ey-Nqk"/>
+                <constraint firstAttribute="trailing" secondItem="nqF-TC-DMd" secondAttribute="trailing" id="vVh-O2-FOx"/>
+            </constraints>
+            <nil key="simulatedStatusBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="LuckyRotateWhell" destination="Rja-uy-YLH" id="wAD-Ed-zto"/>
+            </connections>
+            <point key="canvasLocation" x="362" y="320"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="LuckyBaseBackground" width="286" height="286"/>
+        <image name="LuckyCenterButton" width="81" height="81"/>
+        <image name="LuckyRotateWheel" width="286" height="286"/>
+    </resources>
+</document>
